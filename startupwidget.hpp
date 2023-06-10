@@ -37,7 +37,7 @@ private:
     void showLoading();
 
     QRegularExpression patternPrefix{"^(https?|ftp)://"};
-    QRegularExpression patternDomain{"^([\\d\\w]+\\.)+[\\d\\w]+$"};
+    QRegularExpression patternDomain{"^([\\d\\w]+\\.)+[\\d\\w]+(:\\d+)?$"};
 
     QUrl resoluteUrl(const QString &);
 
